@@ -1,0 +1,275 @@
+
+==================================================
+Date: 2026-07-12T06:43:59.656Z
+To: patient@clinic.com
+Subject: Appointment Confirmed: Dr. Gregory House
+Body:
+Dear John Doe,
+
+Your medical appointment is confirmed. Details below:
+- Doctor: Dr. Gregory House
+- Date: 2026-07-13
+- Time: 10:00 - 10:30
+
+Pre-Visit AI Review:
+- Urgent rating: High
+- Chief Complaint: Cardiorespiratory or acute severe symptom report
+
+If you need to reschedule or cancel, please contact the clinic admin.
+Warm regards,
+Clinic Team
+==================================================
+
+==================================================
+Date: 2026-07-12T06:43:59.665Z
+To: doctor@clinic.com
+Subject: New Patient Booking: John Doe
+Body:
+Dear Dr. Gregory House,
+
+A new appointment has been scheduled in your calendar:
+- Patient: John Doe
+- Date: 2026-07-13
+- Time: 10:00 - 10:30
+- Symptoms reported: "chest pain while walking"
+
+AI Clinical Analysis:
+- Urgency Level: High
+- Chief Complaint Summary: Cardiorespiratory or acute severe symptom report
+- Recommended follow-up check questions:
+  1. When did the onset of chest pain/severe breathing difficulty start?
+  2. Are you experiencing any radiating pain in your left arm, neck, or back?
+  3. Have you ever had a history of cardiac issues or asthma?
+
+A calendar invite has been linked to your scheduler.
+Regards,
+Clinic System
+==================================================
+
+==================================================
+Date: 2026-07-12T06:45:46.356Z
+To: patient@clinic.com
+Subject: Post-Visit Summary & Prescription: Dr. Gregory House
+Body:
+Dear John Doe,
+
+Thank you for visiting Dr. Gregory House today. Here is a review of your consultation:
+
+Clinical Visit Summary:
+Patient-Friendly Summary:
+Here is a review of your clinic visit. The doctor noted:
+"i will give you medicine follow it and take it on time
+Prescription: paracetmol:- take 3 times"
+
+Please follow the medication schedules and advice provided below. Contact the clinic if symptoms worsen.
+
+Prescription Details:
+paracetmol:- take 3 times
+
+Scheduled Reminders:
+No recurring reminders scheduled.
+
+You will receive medication reminders by email according to the prescribed frequency.
+
+Warm regards,
+Clinic Care Manager
+==================================================
+
+==================================================
+Date: 2026-07-12T06:58:31.582Z
+To: shirodeprachi8@gmail.com
+Subject: Appointment Confirmed: Dr. Gregory House
+Body:
+Dear prachi,
+
+Your medical appointment is confirmed. Details below:
+- Doctor: Dr. Gregory House
+- Date: 2026-07-16
+- Time: 12:00 - 12:30
+
+Pre-Visit AI Review:
+- Urgent rating: High
+- Chief Complaint: Cardiorespiratory or acute severe symptom report
+
+If you need to reschedule or cancel, please contact the clinic admin.
+Warm regards,
+Clinic Team
+==================================================
+
+==================================================
+Date: 2026-07-12T06:58:31.592Z
+To: doctor@clinic.com
+Subject: New Patient Booking: prachi
+Body:
+Dear Dr. Gregory House,
+
+A new appointment has been scheduled in your calendar:
+- Patient: prachi
+- Date: 2026-07-16
+- Time: 12:00 - 12:30
+- Symptoms reported: "heart paining"
+
+AI Clinical Analysis:
+- Urgency Level: High
+- Chief Complaint Summary: Cardiorespiratory or acute severe symptom report
+- Recommended follow-up check questions:
+  1. When did the onset of chest pain/severe breathing difficulty start?
+  2. Are you experiencing any radiating pain in your left arm, neck, or back?
+  3. Have you ever had a history of cardiac issues or asthma?
+
+A calendar invite has been linked to your scheduler.
+Regards,
+Clinic System
+==================================================
+
+==================================================
+Date: 2026-07-14T18:41:07.657Z
+To: pat1@clinic.com
+Subject: Reminder: Upcoming Appointment with Dr. Dr. Tester Tomorrow
+Body:
+Dear Patient One,
+
+This is a friendly reminder that you have a consultation scheduled with Dr. Dr. Tester tomorrow, 2026-07-15, at 14:00 - 14:30.
+
+Symptom Review Summary:
+- Chief Complaint: None
+- Urgency Level: Pending
+
+If you need to reschedule or cancel, please contact the clinic administrator.
+
+Warm regards,
+Clinic Care Team
+==================================================
+
+==================================================
+Date: 2026-07-14T18:41:07.764Z
+To: test_doc@clinic.com
+Subject: Upcoming Appointment: Patient One Tomorrow
+Body:
+Dear Dr. Dr. Tester,
+
+This is a reminder of your upcoming consultation tomorrow, 2026-07-15, at 14:00 - 14:30 with patient Patient One.
+
+AI Pre-Visit Review:
+- Urgency Level: Pending
+- Chief Complaint: None
+
+Please review their symptoms inside your dashboard before the appointment.
+
+Regards,
+Clinic System
+==================================================
+
+==================================================
+Date: 2026-07-14T18:47:23.739Z
+To: pat1@clinic.com
+Subject: Reminder: Upcoming Appointment with Dr. Dr. Tester Tomorrow
+Body:
+Dear Patient One,
+
+This is a friendly reminder that you have a consultation scheduled with Dr. Dr. Tester tomorrow, 2026-07-15, at 14:00 - 14:30.
+
+Symptom Review Summary:
+- Chief Complaint: None
+- Urgency Level: Pending
+
+If you need to reschedule or cancel, please contact the clinic administrator.
+
+Warm regards,
+Clinic Care Team
+==================================================
+
+==================================================
+Date: 2026-07-14T18:47:23.758Z
+To: test_doc@clinic.com
+Subject: Upcoming Appointment: Patient One Tomorrow
+Body:
+Dear Dr. Dr. Tester,
+
+This is a reminder of your upcoming consultation tomorrow, 2026-07-15, at 14:00 - 14:30 with patient Patient One.
+
+AI Pre-Visit Review:
+- Urgency Level: Pending
+- Chief Complaint: None
+
+Please review their symptoms inside your dashboard before the appointment.
+
+Regards,
+Clinic System
+==================================================
+
+==================================================
+Date: 2026-07-14T18:49:06.372Z
+To: pat1@clinic.com
+Subject: Reminder: Upcoming Appointment with Dr. Dr. Tester Tomorrow
+Body:
+Dear Patient One,
+
+This is a friendly reminder that you have a consultation scheduled with Dr. Dr. Tester tomorrow, 2026-07-15, at 14:00 - 14:30.
+
+Symptom Review Summary:
+- Chief Complaint: None
+- Urgency Level: Pending
+
+If you need to reschedule or cancel, please contact the clinic administrator.
+
+Warm regards,
+Clinic Care Team
+==================================================
+
+==================================================
+Date: 2026-07-14T18:49:06.385Z
+To: test_doc@clinic.com
+Subject: Upcoming Appointment: Patient One Tomorrow
+Body:
+Dear Dr. Dr. Tester,
+
+This is a reminder of your upcoming consultation tomorrow, 2026-07-15, at 14:00 - 14:30 with patient Patient One.
+
+AI Pre-Visit Review:
+- Urgency Level: Pending
+- Chief Complaint: None
+
+Please review their symptoms inside your dashboard before the appointment.
+
+Regards,
+Clinic System
+==================================================
+
+==================================================
+Date: 2026-07-14T19:21:54.150Z
+To: pat1@clinic.com
+Subject: Reminder: Upcoming Appointment with Dr. Dr. Tester Tomorrow
+Body:
+Dear Patient One,
+
+This is a friendly reminder that you have a consultation scheduled with Dr. Dr. Tester tomorrow, 2026-07-15, at 14:00 - 14:30.
+
+Symptom Review Summary:
+- Chief Complaint: None
+- Urgency Level: Pending
+
+If you need to reschedule or cancel, please contact the clinic administrator.
+
+Warm regards,
+Clinic Care Team
+==================================================
+
+==================================================
+Date: 2026-07-14T19:21:54.158Z
+To: test_doc@clinic.com
+Subject: Upcoming Appointment: Patient One Tomorrow
+Body:
+Dear Dr. Dr. Tester,
+
+This is a reminder of your upcoming consultation tomorrow, 2026-07-15, at 14:00 - 14:30 with patient Patient One.
+
+AI Pre-Visit Review:
+- Urgency Level: Pending
+- Chief Complaint: None
+
+Please review their symptoms inside your dashboard before the appointment.
+
+Regards,
+Clinic System
+==================================================

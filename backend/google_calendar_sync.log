@@ -1,0 +1,530 @@
+
+==================================================
+Date: 2026-07-12T06:43:59.627Z
+Action: CREATE
+Event ID: gcal_i30rozw4
+Event Details:
+{
+  "summary": "Medical Appointment: John Doe / Dr. Gregory House",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: High\nChief Complaint: Cardiorespiratory or acute severe symptom report\nSymptoms: chest pain while walking",
+  "start": {
+    "dateTime": "2026-07-13T10:00:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-13T10:30:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "doctor@clinic.com",
+      "displayName": "Dr. Gregory House"
+    },
+    {
+      "email": "patient@clinic.com",
+      "displayName": "John Doe"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-12T06:58:31.551Z
+Action: CREATE
+Event ID: gcal_l1w3i55e
+Event Details:
+{
+  "summary": "Medical Appointment: prachi / Dr. Gregory House",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: High\nChief Complaint: Cardiorespiratory or acute severe symptom report\nSymptoms: heart paining",
+  "start": {
+    "dateTime": "2026-07-16T12:00:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-16T12:30:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "doctor@clinic.com",
+      "displayName": "Dr. Gregory House"
+    },
+    {
+      "email": "shirodeprachi8@gmail.com",
+      "displayName": "prachi"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-12T07:21:51.633Z
+Action: CREATE
+Event ID: gcal_teg2ienn
+Event Details:
+{
+  "summary": "Medical Appointment: prachi shirode / Dr. Gregory House",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: Medium\nChief Complaint: Infectious or moderate inflammatory symptom report\nSymptoms: Fever for the last 2 days.\nDry cough.\nBody pain.\nMild headache.\nFeeling weak.",
+  "start": {
+    "dateTime": "2026-07-14T12:00:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-14T12:30:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "doctor@clinic.com",
+      "displayName": "Dr. Gregory House"
+    },
+    {
+      "email": "prachi.shirode23@vit.edu",
+      "displayName": "prachi shirode"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-12T08:40:59.461Z
+Action: CREATE
+Event ID: gcal_4k83v0wm
+Event Details:
+{
+  "summary": "Medical Appointment: prachi / Dr. Gregory House",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: Medium\nChief Complaint: Infectious or moderate inflammatory symptom report\nSymptoms: high fever",
+  "start": {
+    "dateTime": "2026-07-13T10:00:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-13T10:30:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "doctor@clinic.com",
+      "displayName": "Dr. Gregory House"
+    },
+    {
+      "email": "shirodeprachi8@gmail.com",
+      "displayName": "prachi"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-12T09:48:46.516Z
+Action: CREATE
+Event ID: gcal_dpka5ptc
+Event Details:
+{
+  "summary": "Medical Appointment: prachi / Dr. Gregory House",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: Medium\nChief Complaint: Infectious or moderate inflammatory symptom report\nSymptoms: start: 7/12/2026\nhigh fever from 2 days",
+  "start": {
+    "dateTime": "2026-07-13T10:00:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-13T10:30:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "doctor@clinic.com",
+      "displayName": "Dr. Gregory House"
+    },
+    {
+      "email": "shirodeprachi8@gmail.com",
+      "displayName": "prachi"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-12T10:39:33.198Z
+Action: CREATE
+Event ID: gcal_grzhpk47
+Event Details:
+{
+  "summary": "Medical Appointment: Priya / Dr. Dr. Rohan Verma",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: Low\nChief Complaint: Feeling pain or tightness in the chest that may worsen with ...\nSymptoms: Feeling pain or tightness in the chest that may worsen with movement or exertion.",
+  "start": {
+    "dateTime": "2026-07-13T10:00:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-13T10:30:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "rahulverma@healthcare.com",
+      "displayName": "Dr. Dr. Rohan Verma"
+    },
+    {
+      "email": "prachishirode123@gmail.com",
+      "displayName": "Priya"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-12T13:11:41.283Z
+Action: CREATE
+Event ID: gcal_bpq5a036
+Event Details:
+{
+  "summary": "Medical Appointment: prachi / Dr. Dr. Sneha Kulkarni",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: Low\nChief Complaint: Skin Allergy\nSymptoms: Skin Allergy",
+  "start": {
+    "dateTime": "2026-07-13T10:00:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-13T10:30:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "snehakulkarni@healthcare.com",
+      "displayName": "Dr. Dr. Sneha Kulkarni"
+    },
+    {
+      "email": "shirodeprachi8@gmail.com",
+      "displayName": "prachi"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-12T14:12:33.917Z
+Action: CREATE
+Event ID: gcal_nro4mwsm
+Event Details:
+{
+  "summary": "Medical Appointment: prachi / Dr. Rahul Sharma",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: Medium\nChief Complaint: Infectious or moderate inflammatory symptom report\nSymptoms: high fever",
+  "start": {
+    "dateTime": "2026-07-14T12:30:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-14T13:00:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "rahulsharma@healthcare.com",
+      "displayName": "Dr. Rahul Sharma"
+    },
+    {
+      "email": "shirodeprachi8@gmail.com",
+      "displayName": "prachi"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-12T14:34:23.128Z
+Action: CREATE
+Event ID: gcal_p8kz17us
+Event Details:
+{
+  "summary": "Medical Appointment: Aayush Tolmare / Dr. Rahul Sharma",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: High\nChief Complaint: Cardiorespiratory or acute severe symptom report\nSymptoms: Feeling pain or pressure in the chest along with mild shortness of breath.",
+  "start": {
+    "dateTime": "2026-07-14T11:00:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-14T11:30:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "rahulsharma@healthcare.com",
+      "displayName": "Dr. Rahul Sharma"
+    },
+    {
+      "email": "aayush.tolmare23@vit.edu",
+      "displayName": "Aayush Tolmare"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-12T14:57:39.124Z
+Action: CREATE
+Event ID: gcal_2hlsmwuv
+Event Details:
+{
+  "summary": "Medical Appointment: Aayush Tolmare / Dr. Sneha Kulkarni",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: Low\nChief Complaint: fish allergy\nSymptoms: fish allergy",
+  "start": {
+    "dateTime": "2026-07-15T12:00:00",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2026-07-15T12:30:00",
+    "timeZone": "UTC"
+  },
+  "attendees": [
+    {
+      "email": "snehakulkarni@healthcare.com",
+      "displayName": "Dr. Sneha Kulkarni"
+    },
+    {
+      "email": "aayush.tolmare23@vit.edu",
+      "displayName": "Aayush Tolmare"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-13T16:57:07.811Z
+Action: CREATE
+Event ID: gcal_pdhgli65
+Event Details:
+{
+  "summary": "Medical Appointment: Aayush Tolmare / Dr. Sneha Kulkarni",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: Medium\nChief Complaint: Symptom report for skin allergy / rash and suspected infection\nSymptoms: itching on the  right hand, skin irritation , rednesss . feels like fungal infection.",
+  "start": {
+    "dateTime": "2026-07-15T11:00:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "end": {
+    "dateTime": "2026-07-15T11:30:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "attendees": [
+    {
+      "email": "snehakulkarni@healthcare.com",
+      "displayName": "Dr. Sneha Kulkarni"
+    },
+    {
+      "email": "aayush.tolmare23@vit.edu",
+      "displayName": "Aayush Tolmare"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-13T18:19:03.477Z
+Action: DELETE
+Event ID: gcal_2hlsmwuv
+Event Details:
+{
+  "status": "cancelled"
+}
+==================================================
+
+==================================================
+Date: 2026-07-14T16:56:20.553Z
+Action: CREATE
+Event ID: gcal_zt97kwxv
+Event Details:
+{
+  "summary": "Medical Appointment: Aayush Tolmare / Dr. Rahul Sharma",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: High\nChief Complaint: Symptom report for chest pain / heart issues, breathing difficulty and active bleeding\nSymptoms: Feeling chest tightness and difficulty breathing. High blood pressure history.",
+  "start": {
+    "dateTime": "2026-07-20T09:00:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "end": {
+    "dateTime": "2026-07-20T09:30:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "attendees": [
+    {
+      "email": "e2e_doc_1784048179751@clinic.com",
+      "displayName": "Dr. Rahul Sharma"
+    },
+    {
+      "email": "e2e_pat_1784048179932@clinic.com",
+      "displayName": "Aayush Tolmare"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-14T16:56:30.992Z
+Action: CREATE
+Event ID: gcal_5tzhcxk7
+Event Details:
+{
+  "summary": "Medical Appointment: Aayush Tolmare / Dr. Rahul Sharma",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: Medium\nChief Complaint: Symptom report for fever and cough\nSymptoms: Fever and minor cough",
+  "start": {
+    "dateTime": "2026-07-20T09:30:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "end": {
+    "dateTime": "2026-07-20T10:00:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "attendees": [
+    {
+      "email": "e2e_doc_1784048179751@clinic.com",
+      "displayName": "Dr. Rahul Sharma"
+    },
+    {
+      "email": "e2e_pat_1784048179932@clinic.com",
+      "displayName": "Aayush Tolmare"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-14T16:56:32.438Z
+Action: DELETE
+Event ID: gcal_5tzhcxk7
+Event Details:
+{
+  "status": "cancelled"
+}
+==================================================
+
+==================================================
+Date: 2026-07-14T17:02:42.659Z
+Action: CREATE
+Event ID: gcal_8if7hfaw
+Event Details:
+{
+  "summary": "Medical Appointment: John Patient / Dr. Rahul Sharma",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: High\nChief Complaint: Symptom report for chest pain / heart issues and breathing difficulty\nSymptoms: Experiencing shortness of breath and chest tightness.",
+  "start": {
+    "dateTime": "2026-07-20T09:00:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "end": {
+    "dateTime": "2026-07-20T09:30:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "attendees": [
+    {
+      "email": "e2e_doc_1784048561849@clinic.com",
+      "displayName": "Dr. Rahul Sharma"
+    },
+    {
+      "email": "e2e_pat_1784048562066@clinic.com",
+      "displayName": "John Patient"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-14T17:03:25.279Z
+Action: CREATE
+Event ID: gcal_aa9xo3oh
+Event Details:
+{
+  "summary": "Medical Appointment: John Patient / Dr. Rahul Sharma",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: High\nChief Complaint: Symptom report for chest pain / heart issues and breathing difficulty\nSymptoms: Experiencing shortness of breath and chest tightness.",
+  "start": {
+    "dateTime": "2026-07-20T09:00:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "end": {
+    "dateTime": "2026-07-20T09:30:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "attendees": [
+    {
+      "email": "e2e_doc_1784048604567@clinic.com",
+      "displayName": "Dr. Rahul Sharma"
+    },
+    {
+      "email": "e2e_pat_1784048604734@clinic.com",
+      "displayName": "John Patient"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-14T17:13:26.473Z
+Action: CREATE
+Event ID: gcal_7r478fky
+Event Details:
+{
+  "summary": "Medical Appointment: John Patient / Dr. Rahul Sharma",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: High\nChief Complaint: Symptom report for chest pain / heart issues and breathing difficulty\nSymptoms: Experiencing shortness of breath and chest tightness.",
+  "start": {
+    "dateTime": "2026-07-20T09:00:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "end": {
+    "dateTime": "2026-07-20T09:30:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "attendees": [
+    {
+      "email": "e2e_doc_1784049205162@clinic.com",
+      "displayName": "Dr. Rahul Sharma"
+    },
+    {
+      "email": "e2e_pat_1784049205323@clinic.com",
+      "displayName": "John Patient"
+    }
+  ]
+}
+==================================================
+
+==================================================
+Date: 2026-07-14T17:14:07.840Z
+Action: CREATE
+Event ID: gcal_t1z42m8m
+Event Details:
+{
+  "summary": "Medical Appointment: John Patient / Dr. Rahul Sharma",
+  "location": "Clinic / Telehealth",
+  "description": "Pre-visit Urgency: High\nChief Complaint: Symptom report for chest pain / heart issues and breathing difficulty\nSymptoms: Experiencing shortness of breath and chest tightness.",
+  "start": {
+    "dateTime": "2026-07-20T09:00:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "end": {
+    "dateTime": "2026-07-20T09:30:00",
+    "timeZone": "Asia/Calcutta"
+  },
+  "attendees": [
+    {
+      "email": "e2e_doc_1784049247095@clinic.com",
+      "displayName": "Dr. Rahul Sharma"
+    },
+    {
+      "email": "e2e_pat_1784049247285@clinic.com",
+      "displayName": "John Patient"
+    }
+  ]
+}
+==================================================
