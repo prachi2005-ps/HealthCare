@@ -17,6 +17,18 @@ router.post('/register', async (req, res) => {
     return res.status(400).json({ error: 'Please supply email, password, and full name.' });
   }
 
+  // Password complexity validation
+  const hasUpper = /[A-Z]/.test(password);
+  const hasLower = /[a-z]/.test(password);
+  const hasNumber = /[0-9]/.test(password);
+  const hasSpecial = /[^A-Za-z0-9]/.test(password);
+
+  if (password.length < 6 || !hasUpper || !hasLower || !hasNumber || !hasSpecial) {
+    return res.status(400).json({
+      error: 'Password must be at least 6 characters and contain uppercase, lowercase, numbers, and special characters.'
+    });
+  }
+
   try {
     // Check if user already exists
     const existingUser = await db.get('SELECT id FROM users WHERE email = ?', [email.trim().toLowerCase()]);

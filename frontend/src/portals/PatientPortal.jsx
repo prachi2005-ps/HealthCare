@@ -9,17 +9,19 @@ const formatFrequency = (freq) => {
   return freq;
 };
 
-const formatReminderText = (dosage, frequency) => {
+const formatReminderText = (medicationName, dosage, frequency) => {
   const freqLabel = formatFrequency(frequency).toLowerCase();
   const dosageClean = dosage || 'As directed';
+  const name = medicationName || 'Medication';
+
   if (/^as directed/i.test(dosageClean)) {
-    return `Use as directed, ${freqLabel}`;
+    return `Take ${name}, ${freqLabel}`;
   }
   if (/^(?:apply|use|rub|drop|spray|inhale|gargle)/i.test(dosageClean)) {
     const capitalizedDosage = dosageClean.charAt(0).toUpperCase() + dosageClean.slice(1);
-    return `${capitalizedDosage}, ${freqLabel}`;
+    return `${capitalizedDosage} of ${name}, ${freqLabel}`;
   }
-  return `Take ${dosageClean}, ${freqLabel}`;
+  return `Take ${name} (${dosageClean}), ${freqLabel}`;
 };
 
 export default function PatientPortal({ token, user }) {
@@ -770,7 +772,7 @@ export default function PatientPortal({ token, user }) {
                     <div>
                       <h3 style={{ fontWeight: '800', fontSize: '1.2rem', color: 'var(--text-primary)' }}>{rem.medication_name}</h3>
                       <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.4rem' }}>
-                        <strong>{formatReminderText(rem.dosage, rem.frequency)}</strong>
+                        <strong>{formatReminderText(rem.medication_name, rem.dosage, rem.frequency)}</strong>
                       </p>
                       <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.4rem' }}>
                         📅 Validity: {rem.start_date} to {rem.end_date}

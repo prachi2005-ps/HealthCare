@@ -20,6 +20,18 @@ router.post('/doctors', async (req, res) => {
     return res.status(400).json({ error: 'Please supply email, password, full name, specialization, and working hours.' });
   }
 
+  // Password complexity validation
+  const hasUpper = /[A-Z]/.test(password);
+  const hasLower = /[a-z]/.test(password);
+  const hasNumber = /[0-9]/.test(password);
+  const hasSpecial = /[^A-Za-z0-9]/.test(password);
+
+  if (password.length < 6 || !hasUpper || !hasLower || !hasNumber || !hasSpecial) {
+    return res.status(400).json({
+      error: 'Password must be at least 6 characters and contain uppercase, lowercase, numbers, and special characters.'
+    });
+  }
+
   // Normalize name by removing any leading 'Dr. ' or 'Dr ' prefix
   let cleanFullName = fullName;
   if (/^dr\.?\s+/i.test(cleanFullName)) {

@@ -123,6 +123,17 @@ export default function App() {
     setAuthError('');
     setAuthSuccess('');
 
+    const hasUpper = /[A-Z]/.test(password);
+    const hasLower = /[a-z]/.test(password);
+    const hasNumber = /[0-9]/.test(password);
+    const hasSpecial = /[^A-Za-z0-9]/.test(password);
+
+    if (password.length < 6 || !hasUpper || !hasLower || !hasNumber || !hasSpecial) {
+      setAuthError('Password must be at least 6 characters and contain uppercase, lowercase, numbers, and special characters.');
+      setLoading(false);
+      return;
+    }
+
     try {
       const res = await fetch('http://localhost:5000/api/auth/register', {
         method: 'POST',
@@ -308,6 +319,29 @@ export default function App() {
                       >
                         {showRegisterPassword ? <EyeClosedIcon /> : <EyeOpenIcon />}
                       </button>
+                    </div>
+                    <div style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                      {!password ? (
+                        <span>Must enter a password of at least 6 characters with uppercase, lowercase, numbers, and special characters.</span>
+                      ) : (
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.25rem', marginTop: '0.25rem' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: password.length >= 6 ? '#10b981' : '#f43f5e', fontWeight: '500' }}>
+                            <span>{password.length >= 6 ? '✓' : '✗'}</span> At least 6 chars
+                          </div>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: /[A-Z]/.test(password) ? '#10b981' : '#f43f5e', fontWeight: '500' }}>
+                            <span>{/[A-Z]/.test(password) ? '✓' : '✗'}</span> Uppercase letter
+                          </div>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: /[a-z]/.test(password) ? '#10b981' : '#f43f5e', fontWeight: '500' }}>
+                            <span>{/[a-z]/.test(password) ? '✓' : '✗'}</span> Lowercase letter
+                          </div>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: /[0-9]/.test(password) ? '#10b981' : '#f43f5e', fontWeight: '500' }}>
+                            <span>{/[0-9]/.test(password) ? '✓' : '✗'}</span> Number (0-9)
+                          </div>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: /[^A-Za-z0-9]/.test(password) ? '#10b981' : '#f43f5e', fontWeight: '500', gridColumn: 'span 2' }}>
+                            <span>{/[^A-Za-z0-9]/.test(password) ? '✓' : '✗'}</span> Special character (e.g. !, @, #, etc.)
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                   <button type="submit" className="btn btn-primary" disabled={loading}>

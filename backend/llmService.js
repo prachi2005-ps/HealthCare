@@ -134,11 +134,20 @@ function fallbackAnalyzeSymptoms(symptoms) {
     { category: 'gi', name: 'gastrointestinal issues', keywords: ['vomit', 'nausea', 'diarrhea', 'stomach', 'abdominal pain', 'cramps', 'gi'] },
     { category: 'headache', name: 'headache / migraine', keywords: ['migraine', 'headache', 'head pain'] },
     { category: 'fracture', name: 'physical injury', keywords: ['fracture', 'broken', 'sprain', 'injury', 'fall', 'hurt', 'wound'] },
-    { category: 'infection', name: 'suspected infection', keywords: ['infection', 'pus', 'inflammation', 'swollen', 'swelling'] }
+    { category: 'infection', name: 'suspected infection', keywords: ['infection', 'pus', 'inflammation', 'swollen', 'swelling'] },
+    { category: 'mental_health', name: 'mental health concerns', keywords: ['anxiety', 'depress', 'worry', 'mood', 'panic', 'stress', 'insomnia', 'sleep', 'restless', 'mental'] }
   ];
 
   for (const item of symptomMap) {
-    if (item.keywords.some(kw => text.includes(kw))) {
+    const isMatched = item.keywords.some(kw => {
+      if (kw.length <= 3) {
+        const regex = new RegExp(`\\b${kw}\\b`, 'i');
+        return regex.test(text);
+      }
+      return text.includes(kw);
+    });
+
+    if (isMatched) {
       matchedSymptoms.push(item.name);
       matchedCategories.push(item.category);
     }
@@ -239,6 +248,11 @@ function fallbackAnalyzeSymptoms(symptoms) {
       'Are you experiencing a fever or chills alongside the localized symptoms?',
       'How long have you noticed the symptoms, and are they spreading?'
     ],
+    mental_health: [
+      'Have you been experiencing persistent sadness, stress, or anxiety recently?',
+      'Are these symptoms impacting your sleep patterns, appetite, or daily routines?',
+      'Have you discussed these concerns with a counselor or therapist, or taken mental health treatments in the past?'
+    ],
     general: [
       'How long have you been experiencing these symptoms?',
       'Have you taken any over-the-counter medications to treat this?',
@@ -333,8 +347,16 @@ function fallbackAnalyzeNotes(notes) {
     if (exclusions.some(exc => clean.includes(exc))) {
       return false;
     }
+
+    // Support formatting like: "Drug: 1 -> after dinner" or "Drug - 2 tabs"
+    const colonOrHyphenPattern = /^[a-z0-9\s%\-\.\/()]+?\s*[:\-]\s*\d+/i;
+    if (colonOrHyphenPattern.test(clean)) {
+      return true;
+    }
+
     const drugUnits = /\b\d+(?:\.\d+)?\s*(mg|ml|g|mcg|%|units|tabs?|tablets?|caps?|capsules?|pills?|puffs?|drops?)\b/i;
-    const commonDrugNames = /\b(aspirin|paracetamol|acetaminophen|ibuprofen|amoxicillin|metformin|atorvastatin|lisinopril|amlodipine|albuterol|levothyroxine|metoprolol|losartan|gabapentin|omeprazole|simvastatin|penicillin|clopidogrel|pantoprazole|prednisone)\b/i;
+    // Support common variations/misspellings like paracetmol, asprin, amoxicilin, etc.
+    const commonDrugNames = /\b(aspr?in|paracet[a-z]*|ibuprof[a-z]*|amoxicil[a-z]*|metformin|atorvastatin|lisinopril|amlodipine|albuterol|levothyroxine|metoprolol|losartan|gabapentin|omeprazole|simvastatin|penicillin|clopidogrel|pantoprazole|prednisone)\b/i;
     const dosageKeywords = /\b(take|apply|use|consume|twice|daily|weekly|inhale)\b/i;
     
     return drugUnits.test(clean) || commonDrugNames.test(clean) || dosageKeywords.test(clean);
@@ -515,6 +537,16 @@ function fallbackAnalyzeNotes(notes) {
       const strengthMatch = rest.match(/(\d+(?:\.\d+)?\s*(?:mg|ml|%|g|mcg|units\b))/i);
       if (strengthMatch) {
         dosage = strengthMatch[1].trim();
+      } else {
+        const arrowParts = rest.split('->');
+        if (arrowParts.length >= 2) {
+          dosage = arrowParts[0].trim();
+        } else {
+          const numMatch = rest.match(/^(\d+(?:\s*(?:tab(?:let)?s?|caps(?:ule)?s?|pills?|puffs?|drops?))?|\d+)/i);
+          if (numMatch) {
+            dosage = numMatch[1].trim();
+          }
+        }
       }
     } else {
       const headerRegex = /^([a-zA-Z0-9\s%\-\.\/()]+?)\s+(\d+(?:\.\d+)?\s*(?:mg|ml|%|g|mcg|units\b))\s*([a-zA-Z]+)?/i;
@@ -574,6 +606,11 @@ function fallbackAnalyzeNotes(notes) {
       dosage = dosageMatch[1].trim();
     }
 
+    let finalDosage = dosage;
+    if (/^\d+$/.test(finalDosage)) {
+      finalDosage = `${finalDosage} tablet(s)`;
+    }
+
     const startDate = new Date().toISOString().split('T')[0];
     const endDateObj = new Date();
     endDateObj.setDate(endDateObj.getDate() + durationDays);
@@ -581,7 +618,7 @@ function fallbackAnalyzeNotes(notes) {
 
     medications.push({
       name,
-      dosage,
+      dosage: finalDosage,
       frequency,
       start_date: startDate,
       end_date: endDate
@@ -684,18 +721,18 @@ function fallbackAnalyzeNotes(notes) {
   patientSummary += `Here is a quick summary of what we discussed and what to do next:\n\n`;
 
   if (diagnosisPart) {
-    patientSummary += `🩺 What We Found\n${diagnosisPart}\n\n`;
+    patientSummary += `🩺 Summary of Visit\n${diagnosisPart}\n\n`;
   }
 
   if (medicationPart) {
-    patientSummary += `💊 Your Medications\n${medicationPart}\n\n`;
+    patientSummary += `💊 Prescribed Medications\n${medicationPart}\n\n`;
   }
 
   if (lifestylePart) {
-    patientSummary += `🌿 Taking Care of Yourself\n${lifestylePart}\n\n`;
+    patientSummary += `🌿 Care & Recovery Advice\n${lifestylePart}\n\n`;
   }
 
-  patientSummary += `📅 When to Follow Up\n${followupPart}\n\n`;
+  patientSummary += `📅 Follow-up Plan\n${followupPart}\n\n`;
   patientSummary += `Take good care, and don't hesitate to reach out if you need anything. Wishing you a smooth and speedy recovery! 💙`;
 
   return {
